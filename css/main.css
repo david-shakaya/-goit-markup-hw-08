@@ -347,6 +347,11 @@ svg {
   }
 }
 
+.icon-open-menu-svg {
+  width: 24px;
+  height: 16px;
+}
+
 /*Герой*/
 /*временное свойство для лучшего восприятия белого текста*/
 .hero-wrapper-box {
