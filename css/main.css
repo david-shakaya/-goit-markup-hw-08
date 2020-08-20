@@ -9,8 +9,6 @@ body {
 .header-wrapper .link,
 .link-logo {
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 ul,
@@ -37,18 +35,19 @@ svg {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
-    margin: 0 auto;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 39px;
     padding-right: 39px;
   }
@@ -56,7 +55,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -324,6 +323,30 @@ svg {
   transform: translate(6px, 6px);
 }
 
+.logo {
+  display: inline-block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-color {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-bottom: 26px;
+    padding-top: 26px;
+  }
+}
+
 /*Герой*/
 /*временное свойство для лучшего восприятия белого текста*/
 .hero-wrapper-box {
@@ -430,12 +453,12 @@ svg {
   height: 294px;
 }
 
-.about-us-list .about-us-list-item {
-  position: relative;
+.about-us-list:not(:last-child) {
+  margin-right: 30px;
 }
 
-.about-us-list .about-us-list-item:not(:last-child) {
-  margin-right: 30px;
+.about-us-list-item {
+  position: relative;
 }
 
 .title {
