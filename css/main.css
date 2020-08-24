@@ -41,7 +41,7 @@ svg {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 450px;
   }
 }
 
@@ -363,11 +363,16 @@ svg {
 }
 
 .menu-btn-tel svg {
+  transition: none;
   fill: black;
 }
 
 .menu-btn-tel svg:hover {
   fill: #2196f3;
+}
+
+.is-open > svg {
+  padding-top: 10px;
 }
 
 .icon-close-menu-svg {
@@ -395,8 +400,16 @@ svg {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.menu-wrapper-tel .is-open {
+.is-open {
   display: contents;
+}
+
+.is-open .icon-open-menu-svg {
+  display: none;
+}
+
+.is-open .icon-close-menu-svg {
+  display: block;
 }
 
 .navigation {
