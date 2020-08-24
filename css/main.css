@@ -323,6 +323,11 @@ svg {
   transform: translate(6px, 6px);
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   display: inline-block;
   padding-bottom: 16px;
@@ -340,16 +345,35 @@ svg {
   color: #2196f3;
 }
 
+.menu-btn-tel {
+  background: transparent;
+  border: none;
+  padding: 0;
+  padding-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn-tel svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-open-menu-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-close-menu-svg {
+  width: 40px;
+  height: 40px;
+}
+
 @media screen and (min-width: 480px) {
   .logo {
     padding-bottom: 26px;
     padding-top: 26px;
   }
-}
-
-.icon-open-menu-svg {
-  width: 24px;
-  height: 16px;
 }
 
 /*Герой*/
