@@ -156,15 +156,15 @@
    <symbol id="form-person" viewBox="0 0 32 32">
 <path d="M16 16c4.42 0 8-3.58 8-8s-3.58-8-8-8c-4.42 0-8 3.58-8 8s3.58 8 8 8zM16 20c-5.34 0-16 2.68-16 8v2c0 1.1 0.9 2 2 2h28c1.1 0 2-0.9 2-2v-2c0-5.32-10.66-8-16-8z"></path>
 </symbol>
- <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-close">
+ <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" id="icon-close">
 <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black"/>
 </svg>
 <symbol width="40" height="40" id="icon-close-menu" viewBox="0 0 32 32">
 <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
 </symbol>
-<symbol width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-open-menu">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
-</symbol
+<symbol width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" id="icon-open-menu">
+<path  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" ><path/>
+</symbol>
 </svg>
 
 
