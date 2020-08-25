@@ -442,6 +442,7 @@ svg {
     opacity: 0;
     height: 393px;
     text-align: center;
+    background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -562,10 +563,10 @@ svg {
 }
 
 /*Герой*/
-/*временное свойство для лучшего восприятия белого текста*/
 .hero-wrapper-box {
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header-copi-smol.jpg);
+  max-width: 480px;
+  width: 100%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-1-img.jpg);
   margin-left: auto;
   margin-right: auto;
   background-origin: padding-box;
@@ -574,19 +575,17 @@ svg {
 }
 
 .hero-wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero-wrapper .hero-title {
-  width: 696px;
-  height: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
