@@ -461,19 +461,23 @@ svg {
     display: none;
   }
   .header {
+    height: 80px;
+  }
+  .header-wrapper {
     display: flex;
+    height: 81px;
   }
   .menu-wrapper-tel {
     display: flex;
     align-items: center;
   }
-  .menu-wrapper-tel .logo {
-    margin-right: 85px;
+  .logo {
+    margin-right: 81px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000000;
   }
@@ -489,6 +493,7 @@ svg {
   }
   .menu-link {
     position: relative;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -517,14 +522,8 @@ svg {
     color: #2196f3;
   }
   /*Контакты*/
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 81px;
-  }
   .header-adress {
-    display: flex;
-    align-items: center;
+    margin-left: 81px;
   }
   .header-adress-mail-svg {
     width: 16px;
@@ -538,15 +537,12 @@ svg {
     fill: #757575;
     margin-right: 10px;
   }
-  .header-adress-list:not(:last-child) {
-    margin-right: 30px;
-  }
   .header-adress-link {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16px;
     letter-spacing: 0.02em;
     color: #757575;
   }

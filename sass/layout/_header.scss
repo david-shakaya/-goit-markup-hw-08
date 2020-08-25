@@ -152,6 +152,8 @@
 }
  
 
+// CТИЛИ ДЛЯ ПЛАНШЕТА 
+
 
 @media screen and (min-width: 768px) {
   .menu-btn-tel {
@@ -159,24 +161,31 @@
   }
 
   .header{
-    display: flex;
+    height: 80px;
   }
+
+  .header-wrapper {
+    display: flex;
+
+    height: 81px;
+  }
+  
 
   .menu-wrapper-tel {
     display: flex;
     align-items: center;
-
+  }
     .logo {
-      margin-right: 85px;
+      margin-right: 81px;
       font-family: $secondary-font;
       font-style: normal;
       font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
+      font-size: 24px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: #000000;
     }
-  }
+  
 
   .logo-color {
     color: $accent-color;
@@ -193,7 +202,7 @@
   
   .menu-link {
     position: relative;
-  
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -227,16 +236,10 @@
   }
   
   /*Контакты*/
-  
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 81px;
-  }
+ 
   .header-adress {
-    display: flex;
-    align-items: center;
-  }
+  margin-left: 81px;
+ }
   
   .header-adress-mail-svg {
     width: 16px;
@@ -252,16 +255,13 @@
     margin-right: 10px;
   }
   
-  .header-adress-list:not(:last-child) {
-    margin-right: 30px;
-  }
   
   .header-adress-link {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16px;
     letter-spacing: 0.02em;
     color: $title-gray-words-color;
 
