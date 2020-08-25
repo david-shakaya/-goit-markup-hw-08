@@ -130,7 +130,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    opacity: 0;;
+    transform: translate(120%, -120%);
     height: 393px;
     text-align: center;
     background-color: #ffffff;
@@ -139,7 +139,7 @@
   }
 
    .is-open {
-    opacity: 1;
+    transform: translateY(0);
 
     .icon-open-menu-svg {
       display: none;
