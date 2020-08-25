@@ -139,8 +139,7 @@
   }
  
    .is-open {
-  transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.5);
-  transform: rotate(5deg) translate(-1em, 1em);
+  transition: all 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.5);
   transform: translateY(0);
 
     .icon-open-menu-svg {

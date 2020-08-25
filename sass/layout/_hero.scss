@@ -2,6 +2,8 @@
 .hero-wrapper-box {
     max-width: 480px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
@@ -67,7 +69,7 @@
   // Стили для планшета
 
   // секция HERO
-  
+
   @media screen and (min-width: 768px) {
     .hero-wrapper-box {
       max-width: 1200px;
