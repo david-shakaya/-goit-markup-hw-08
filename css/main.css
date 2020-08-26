@@ -643,18 +643,16 @@ svg {
   width: 100%;
 }
 
-@media screen and (max-width: 479px) {
-  .list-item-benefits-svg {
-    width: 70px;
-    height: 70px;
-    padding-top: 25px;
-    padding-left: calc((50% - 50px));
-    padding-bottom: 25px;
-    padding-right: calc((50% - 50px));
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
+.list-item-benefits-svg {
+  width: 70px;
+  height: 70px;
+  padding-top: 25px;
+  padding-left: calc((50% - 35px));
+  padding-bottom: 25px;
+  padding-right: calc((50% - 35px));
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .title-benefits {
@@ -673,6 +671,31 @@ svg {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-item-benefits-svg {
+    margin-bottom: 30px;
+  }
+  .list-item-benefits:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-item-benefits {
+    width: 354px;
+  }
+  .list-item-benefits:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+  .list-item-benefits:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 /* Чем мы занимаемся - about Us*/
