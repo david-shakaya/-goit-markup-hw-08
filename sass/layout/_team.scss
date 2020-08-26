@@ -98,7 +98,9 @@
   
 @media screen and (max-width:767px) {
 
-  
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .team-list-item-img {
     width: 100%;
   }
