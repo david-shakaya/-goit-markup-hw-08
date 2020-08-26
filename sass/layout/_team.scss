@@ -1,15 +1,14 @@
 /* Команда*/
 .team-wrapper {
     background-color: #f5f4fa;
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
   
   .team-list {
-    display: flex;
     padding-bottom: 94px;
-    width: 1170px;
+    width: 100%;
+
   }
   
   .title-team {
@@ -22,13 +21,17 @@
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
   
+@media screen and (max-width:767px) {
   .team-list-item-img {
+    width: 100%;
+   
+  }
+}
+
+  .team-list-item-img {
+
     margin-bottom: 30px;
   }
   

@@ -699,6 +699,16 @@ svg {
 }
 
 /* Чем мы занимаемся - about Us*/
+.about-us {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    display: block;
+  }
+}
+
 .title-abaut-us {
   margin-bottom: 50px;
 }
@@ -715,15 +725,6 @@ svg {
 
 .about-us-list-item {
   position: relative;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .subtitle-about-us {
@@ -746,15 +747,13 @@ svg {
 /* Команда*/
 .team-wrapper {
   background-color: #f5f4fa;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .team-list {
-  display: flex;
   padding-bottom: 94px;
-  width: 1170px;
+  width: 100%;
 }
 
 .title-team {
@@ -768,8 +767,10 @@ svg {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team-list-item-img {
+    width: 100%;
+  }
 }
 
 .team-list-item-img {

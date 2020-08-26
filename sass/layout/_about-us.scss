@@ -1,5 +1,14 @@
 
 /* Чем мы занимаемся - about Us*/
+.about-us {
+  display: none;
+}
+
+@media screen and (min-width: 1200px){
+.about-us {
+  display: block;
+}
+}
 .title-abaut-us {
     margin-bottom: 50px;
   }
@@ -18,14 +27,6 @@
   position: relative;
 }
 
-  .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $title-dark-words-color;
-  }
   
   .subtitle-about-us {
     font-weight: 700;
