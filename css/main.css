@@ -976,27 +976,28 @@ svg {
 }
 
 /* Подвал сайта*/
+.footer-addres-join-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .footer {
-  height: 252px;
   background-color: #2f303a;
-}
-
-.footer-addres-join-wrapper {
-  display: flex;
 }
 
 .addres-wrapper {
   margin-top: 60px;
+  text-align: center;
 }
 
 .addres-wrapper .logo {
@@ -1015,14 +1016,14 @@ svg {
 }
 
 .list-item-addres-footer {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .footer-text-join-in-wrapper {
   width: 206px;
-  height: 80px;
-  margin-top: 72px;
-  margin-left: 69px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .addres-footer-mail,
@@ -1042,6 +1043,8 @@ svg {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  display: block;
+  text-align: center;
 }
 
 .footer-social-link-list {
@@ -1078,11 +1081,12 @@ svg {
 }
 
 .footer-subscribe-wrapper {
-  margin-left: 94px;
-  margin-top: 72px;
+  margin-top: 60px;
 }
 
 .footer-text-subscribe {
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1093,10 +1097,6 @@ svg {
 
 .footer-subscribe-wrapper-form {
   margin-top: 20px;
-}
-
-.footer-form-subscribe {
-  display: flex;
 }
 
 .footer-subscribe-wrapper-form input {
@@ -1111,9 +1111,13 @@ svg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: #2F303A;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
 .footer-form-subscribe input {
+  width: 100%;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1122,11 +1126,13 @@ svg {
 }
 
 .footer-subscribe-btn {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   padding-left: 29px;
   color: #ffffff;
   background-color: #2196F3;
