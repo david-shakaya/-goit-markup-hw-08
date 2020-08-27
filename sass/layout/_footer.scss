@@ -21,7 +21,6 @@
  
   
   .addres-wrapper {
-    margin-top: 60px;
     text-align: center;
 
     .logo {
@@ -45,12 +44,6 @@
     margin-top: 8px;
   }
   
-  .footer-text-join-in-wrapper {
-    width: 206px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   
   .addres-footer-mail,
   .addres-footer-tel {
@@ -75,7 +68,7 @@
   
   .footer-social-link-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
   }
   
@@ -84,6 +77,10 @@
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
   
   .footer-social-link-svg {
@@ -127,7 +124,6 @@
   
   
   .footer-subscribe-wrapper-form input {
-    width: 358px;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -146,8 +142,6 @@
   }
   
   .footer-form-subscribe input {
-
-    width: 100%;
     color: rgba(255, 255, 255, 0.6);
 
     &::placeholder {
@@ -184,3 +178,35 @@
     height: 24px;
     margin-left: 10px;
   }
+
+  @media screen and (max-width: 767px) {
+    .footer-text-join-in-wrapper {
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  .footer-form-subscribe input {
+    width: 100%;
+  }
+}
+
+  @media screen and (min-width: 768px) {
+    .footer-addres-join-wrapper {
+      padding-left: calc(76px - 15px);
+      padding-right: calc(89px - 15px);
+    }
+  
+    .footer-addres-join-wrapper-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    
+  .footer-form-subscribe input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+}
