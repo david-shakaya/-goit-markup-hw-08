@@ -166,9 +166,11 @@
     font-size: 12px;
     line-height: 1.14;
   }
-  
+   
   .modal-form-label-textarea-comments {
     position: absolute;
+    top: 0px;
+    left: 0px;
     padding-top: 12px;
     padding-left: 16px;
     color: #757575;
@@ -291,16 +293,13 @@
   }
 
   &:focus-within .modal-form-label-textarea-comments{
-    transform: translate(-369px, -30px);
+    transform: translate(-0px, -30px);
   }
 
   .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments{
-    transform: translate(-369px, -30px);
+    transform: translate(-0px, -30px);
   }
 
-  .modal-form-label-textarea-comments {
-    transform: translateX(-369px);
-  }
 }
 
 @media screen and (max-width: 768px) {
