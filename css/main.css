@@ -1264,14 +1264,6 @@ svg {
   margin-bottom: 30px;
 }
 
-.list-portfolio li:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.list-portfolio li:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-
 .link-portfolio {
   display: block;
   height: 100%;
@@ -1349,6 +1341,12 @@ svg {
   color: #757575;
 }
 
+@media screen and (max-width: 480px) {
+  .btn-list-item {
+    margin-top: 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .btn-list-item:nth-last-child(-n + 2) {
     margin-top: 15px;
@@ -1359,11 +1357,27 @@ svg {
   .btn-list {
     margin-bottom: 40px;
   }
+  .list-item-portfolio:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .list-item-portfolio:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #ECECEC;
+  }
+  .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrapper-opacity > img {
+    width: 354px;
+  }
+  .list-item-portfolio:nth-child(2n+1) {
+    margin-right: 30px;
   }
   .btn-list {
     justify-content: center;
