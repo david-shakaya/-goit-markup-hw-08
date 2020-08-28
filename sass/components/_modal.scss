@@ -15,6 +15,8 @@
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
+      width: calc(100% - 30px);
+      height: 609px;
     
     display: flex;
     box-sizing: border-box;
@@ -268,17 +270,18 @@
   .close-btn-svg > use {
     position: absolute;
     transform: translate(6px, 6px);
-    
   }
-  
-  @media screen and (max-width: 769px) {
 
+  @media screen and (min-width: 480px) {
     .modal-form {
       width: 450px;
-      height: 609px;
-    }
+  }
+}
+
+  @media screen and (max-width: 1599px) {
+
     .modal-form-btn {
-      padding-top: 10px;
+    padding-top: 10px;
     padding-bottom: 10px;
     }
 
@@ -298,4 +301,8 @@
   .modal-form-label-textarea-comments {
     transform: translateX(-369px);
   }
+}
+
+@media screen and (max-width: 768px) {
+
 }
