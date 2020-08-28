@@ -9,24 +9,25 @@
   
   /*Кнопки*/
   .btn-wrapper {
-    padding-top: 93px;
+    padding-top: 60px;
   }
   
   .btn-list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 34px;
-    justify-content: center;
+    margin-bottom: 40px;
   }
   
   .btn-list-item:not(:last-child) {
     margin-right: 8px;
   }
-  
+
   .button {
     height: 38px;
     border: none;
+    border-radius: 4px;
   
     font-weight: 500;
     font-size: 16px;
@@ -55,14 +56,10 @@
   
   /*Портфолио ГАЛЕРЕЯ*/
   .list-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
 
     li {
-      width: calc((100% - 60px) / 3);
       height: 404px;
-      margin-right: 30px;
       margin-bottom: 30px;
 
       &:nth-child(3n) {
@@ -90,15 +87,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.12);
     }
   }
-  
-  .desc-portfolio {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $title-light-words-color;
-  }
-  
+
   .wrapper-opacity {
     position: relative;
     margin-bottom: 20px;
@@ -106,6 +95,8 @@
 
     img {
       display: block;
+      width: 450px;
+      height: 294px;
     }
   }
   
@@ -115,16 +106,22 @@
     top: 0;
     left: 0;
     max-width: 100%;
-    max-height: 100%;
+    height: 294px;
+    display: flex;
+    align-items: center;
     background: rgba(33, 150, 243, 0.9);
   
     margin: 0;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 63px;
-    padding-bottom: 63px;
-    transform: translateY(100%);
+    transform: translateY(135%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $title-light-words-color;
    }
   
   .link-portfolio:hover .desc-portfolio {
@@ -158,8 +155,25 @@
     color: $title-gray-words-color;
   }
 
+  @media screen and (max-width:767px) {
+    .btn-list-item:nth-last-child(-n + 2) {
+      margin-top: 15px;
+    }
+  .btn-list-item:nth-child(3) {
+    margin-right: 0px;
+  }  
+
+  .btn-list {
+    margin-bottom: 40px;
+  }
+}
+
   @media screen and (min-width:768px) {
    .header {
      border-bottom: 1px solid #ECECEC;
+  }
+  .btn-list {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
