@@ -93,3 +93,37 @@
       }
   }
 }
+
+@media screen and (min-width: 1170px) {
+  .hero-wrapper-box {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Header-desc-img.jpg);
+ 
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+}
+  .hero-wrapper {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+
+
+  @media screen and (min-devise-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .hero-wrapper-box {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Header-desc-img@2x.jpg);
+      }
+    }
+}
+}

@@ -51,7 +51,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .container {
     max-width: 1170px;
   }
@@ -421,10 +421,6 @@ svg {
   color: #2196f3;
 }
 
-.header-adress-list:not(:last-child) {
-  margin-bottom: 16px;
-}
-
 .header-adress-link {
   font-weight: 500;
   font-size: 18px;
@@ -525,7 +521,6 @@ svg {
     align-items: center;
   }
   .logo {
-    margin-right: 81px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -575,9 +570,6 @@ svg {
     color: #2196f3;
   }
   /*Контакты*/
-  .header-adress {
-    margin-left: 81px;
-  }
   .header-adress-mail-svg {
     width: 16px;
     height: 11.2px;
@@ -611,6 +603,43 @@ svg {
   .logo {
     padding-bottom: 26px;
     padding-top: 26px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .header-adress {
+    margin-left: 81px;
+  }
+  .logo {
+    margin-right: 81px;
+  }
+  .header-adress-list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-adress {
+    display: flex;
+    align-items: center;
+  }
+  .header-adress-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .menu-list-item:nth-child(3) {
+    margin-right: 305px;
+  }
+  .header-adress-list:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -678,6 +707,27 @@ svg {
 @media screen and (min-width: 768px) and (min-devise-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-wrapper-box .hero-wrapper-box {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-2-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero-wrapper-box {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-desc-img.jpg);
+  }
+  .hero-wrapper-box .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .hero-wrapper-box .hero-wrapper {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-devise-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .hero-wrapper-box .hero-wrapper-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-desc-img@2x.jpg);
   }
 }
 

@@ -54,10 +54,6 @@
     color: $accent-color;
   }
 
-  .header-adress-list:not(:last-child){
-    margin-bottom: 16px;
-  }
-
   .header-adress-link {
   font-weight: 500;
   font-size: 18px;
@@ -180,7 +176,6 @@
     align-items: center;
   }
     .logo {
-      margin-right: 81px;
       font-family: $secondary-font;
       font-style: normal;
       font-weight: 700;
@@ -240,10 +235,6 @@
   }
   
   /*Контакты*/
- 
-  .header-adress {
-  margin-left: 81px;
- }
   
   .header-adress-mail-svg {
     width: 16px;
@@ -287,4 +278,47 @@
   }
 }
 
+@media screen and (max-width: 1169px) {
+  .header-adress {
+    margin-left: 81px;
+   }
 
+   .logo {
+    margin-right: 81px;
+   }
+
+  .header-adress-list:not(:last-child){
+    margin-bottom: 16px;
+  }
+}
+
+
+@media screen and (min-width:1170px) {
+
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-adress {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-adress-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .menu-list-item:nth-child(3) {
+    margin-right: 305px;
+  }
+
+  .header-adress-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
