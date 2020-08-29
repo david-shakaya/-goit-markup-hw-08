@@ -349,6 +349,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 28px;
@@ -604,6 +610,9 @@ svg {
     padding-bottom: 26px;
     padding-top: 26px;
   }
+  .header-adress {
+    margin-left: 81px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -612,9 +621,6 @@ svg {
   }
   .header-adress-list:not(:last-child) {
     margin-bottom: 16px;
-  }
-  .header-adress {
-    margin-left: 81px;
   }
 }
 
@@ -630,6 +636,7 @@ svg {
   .header-adress {
     display: flex;
     align-items: center;
+    margin-left: 0;
   }
   .header-adress-link {
     font-size: 14px;
@@ -710,7 +717,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .hero-wrapper-box {
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-desc-img.jpg);
@@ -725,7 +732,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1170px) and (min-devise-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-devise-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-wrapper-box .hero-wrapper-box {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-desc-img@2x.jpg);
   }
@@ -1434,8 +1441,7 @@ svg {
 
 .wrapper-opacity img {
   display: block;
-  width: 450px;
-  height: 294px;
+  width: 100%;
 }
 
 .desc-portfolio {
@@ -1464,8 +1470,6 @@ svg {
 }
 
 .title-portfolio {
-  width: 322px;
-  height: 36px;
   margin-bottom: 4px;
   margin-left: 24px;
   text-decoration: none;
@@ -1477,8 +1481,6 @@ svg {
 }
 
 .text-portfolio {
-  width: 322px;
-  height: 30px;
   margin: 0px;
   margin-left: 24px;
   font-weight: 400;
@@ -1523,12 +1525,25 @@ svg {
   .wrapper-opacity > img {
     width: 354px;
   }
+  .list-item-portfolio {
+    border: none;
+  }
   .list-item-portfolio:nth-child(2n+1) {
     margin-right: 30px;
   }
   .btn-list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-item-portfolio {
+    border: none;
+    margin-right: 30px;
+  }
+  .list-item-portfolio:nth-child(3n) {
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

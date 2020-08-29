@@ -88,8 +88,7 @@
 
     img {
       display: block;
-      width: 450px;
-      height: 294px;
+      width: 100%;
     }
   }
   
@@ -122,8 +121,6 @@
   }
   
   .title-portfolio {
-    width: 322px;
-    height: 36px;
     margin-bottom: 4px;
     margin-left: 24px;
   
@@ -136,8 +133,6 @@
   }
   
   .text-portfolio {
-    width: 322px;
-    height: 30px;
     margin: 0px;
     margin-left: 24px;
   
@@ -192,6 +187,7 @@
   }
 
   .list-item-portfolio {
+    border: none ;
   
     &:nth-child(2n+1) {
       margin-right: 30px;
@@ -201,4 +197,15 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+}
+
+@media screen and (min-width:1200px) {
+  .list-item-portfolio {
+    border: none ;
+    margin-right: 30px;
+  
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+}
 }

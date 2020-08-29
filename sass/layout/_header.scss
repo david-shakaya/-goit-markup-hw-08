@@ -276,7 +276,13 @@
       padding-bottom: 26px;
       padding-top: 26px;
   }
+
+  .header-adress {
+    margin-left: 81px;
+   }
+
  
+  
 }
 
 @media screen and (max-width: 1199px) {
@@ -288,9 +294,7 @@
   .header-adress-list:not(:last-child){
     margin-bottom: 16px;
   }
-  .header-adress {
-    margin-left: 81px;
-   }
+ 
 }
 
 
@@ -309,6 +313,9 @@
   .header-adress {
     display: flex;
     align-items: center;
+     margin-left: 0;
+    
+  
   }
 
   .header-adress-link {
