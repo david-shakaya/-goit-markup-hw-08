@@ -604,12 +604,12 @@ svg {
     padding-bottom: 26px;
     padding-top: 26px;
   }
-}
-
-@media screen and (max-width: 1199px) {
   .header-adress {
     margin-left: 81px;
   }
+}
+
+@media screen and (max-width: 1199px) {
   .logo {
     margin-right: 81px;
   }
@@ -791,21 +791,21 @@ svg {
     display: flex;
     flex-wrap: wrap;
   }
-}
-
-@media screen and (max-width: 1199px) {
-  .list-benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .list-item-benefits:nth-child(2n + 1) {
+    margin-right: 30px;
   }
   .list-item-benefits {
     width: 354px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .list-item-benefits:nth-child(-n + 2) {
     margin-bottom: 30px;
-  }
-  .list-item-benefits:nth-child(2n + 1) {
-    margin-right: 30px;
   }
 }
 
@@ -1140,10 +1140,6 @@ svg {
   background-color: #2f303a;
 }
 
-.addres-wrapper {
-  text-align: center;
-}
-
 .addres-wrapper .logo {
   padding: 0px;
 }
@@ -1221,13 +1217,8 @@ svg {
   background-color: #2196f3;
 }
 
-.footer-subscribe-wrapper {
-  margin-top: 60px;
-}
-
 .footer-text-subscribe {
   display: block;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1258,6 +1249,7 @@ svg {
 
 .footer-form-subscribe input {
   color: rgba(255, 255, 255, 0.6);
+  width: 100%;
 }
 
 .footer-form-subscribe input::placeholder {
@@ -1265,7 +1257,6 @@ svg {
 }
 
 .footer-subscribe-btn {
-  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -1316,6 +1307,48 @@ svg {
     margin-left: auto;
     margin-right: auto;
     width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .addres-wrapper {
+    text-align: center;
+  }
+  .footer-subscribe-wrapper {
+    margin-top: 60px;
+  }
+  .footer-subscribe-wrapper .footer-subscribe-btn {
+    margin-top: 20px;
+  }
+  .footer-subscribe-wrapper .footer-text-subscribe {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .addres-wrapper {
+    margin-right: 69px;
+  }
+  .footer-addres-join-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .list-item-addres-footer {
+    margin-top: 9px;
+  }
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .footer-form-subscribe {
+    display: flex;
+  }
+  .footer-form-subscribe input {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 

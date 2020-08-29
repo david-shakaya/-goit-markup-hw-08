@@ -1,5 +1,4 @@
 /* Подвал сайта*/
-
 .footer-addres-join-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -21,7 +20,6 @@
  
   
   .addres-wrapper {
-    text-align: center;
 
     .logo {
       padding: 0px;
@@ -103,13 +101,9 @@
     }
   }
   
-  .footer-subscribe-wrapper {
-    margin-top: 60px;
-  }
   
   .footer-text-subscribe {
     display: block;
-    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -147,10 +141,10 @@
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
       }
+      width: 100%;
   }
   
   .footer-subscribe-btn {
-    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -188,6 +182,7 @@
 
   .footer-form-subscribe input {
     width: 100%;
+    
   }
 }
 
@@ -196,7 +191,6 @@
       padding-left: calc(76px - 15px);
       padding-right: calc(89px - 15px);
     }
-  
     .footer-addres-join-wrapper-flex {
       display: flex;
       justify-content: space-between;
@@ -207,6 +201,58 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+      width: 450px;
   }
+}
+@media screen and (max-width: 1199px) {
+ 
+  .addres-wrapper {
+    text-align: center;
+  }
+
+  .footer-subscribe-wrapper {
+    margin-top: 60px;
+    
+    .footer-subscribe-btn {
+      margin-top: 20px;
+    }
+
+    .footer-text-subscribe {
+      display: block;
+      text-align: center;
+    }    
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .addres-wrapper {
+    margin-right: 69px;
+  }
+
+  .footer-addres-join-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .list-item-addres-footer {
+    margin-top: 9px;
+  }
+
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .footer-form-subscribe {
+    display: flex;
+  }
+
+  .footer-form-subscribe input {
+    width: 358px;
+    margin-right: 12px;
+  }
+
 }
