@@ -11,6 +11,9 @@
   }
   
   .client-list-item {
+
+      width: calc((100% - 30px)/2);
+      height: 90px;
   
     .link {
       box-sizing: border-box;
@@ -87,10 +90,14 @@
 
 @media screen and (min-width: 768px) {
   .client-list-item {
-    width: calc((100% - 60px)/3);
     height: 90px;
+    width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
+
+  }
+
+  .client-list-item {
 
     &:nth-last-child(3n - 2) {
       margin-right: 0px;
@@ -100,4 +107,24 @@
       margin-bottom: 0px;
     }  
   }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list-item {
+  width: calc((100% - 150px)/6);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  padding-bottom: 94px;
+}
 }
