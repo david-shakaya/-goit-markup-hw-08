@@ -47,11 +47,11 @@ svg {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 738px;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
@@ -606,7 +606,7 @@ svg {
   }
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .header-adress {
     margin-left: 81px;
   }
@@ -618,7 +618,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
@@ -791,6 +791,13 @@ svg {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .list-benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .list-item-benefits {
     width: 354px;
   }
@@ -798,6 +805,19 @@ svg {
     margin-bottom: 30px;
   }
   .list-item-benefits:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .list-item-benefits {
+    width: 270px;
+  }
+  .list-item-benefits:not(:last-child) {
     margin-right: 30px;
   }
 }

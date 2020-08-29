@@ -72,6 +72,13 @@
           display: flex;
           flex-wrap: wrap;
         }
+      }
+      
+      @media screen and (max-width: 1199px) {
+        .list-benefits {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
 
         .list-item-benefits {
           width:354px;
@@ -84,5 +91,19 @@
             margin-right: 30px;
           }
         }
+      }
 
+      @media screen and (min-width: 1200px) {
+        .list-benefits {
+          padding-top: 94px;
+          padding-bottom: 94px;
+        }
+
+        .list-item-benefits {
+          width: 270px;
+
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
       }
