@@ -1420,7 +1420,6 @@ svg {
 
 .list-portfolio li {
   height: 404px;
-  margin-bottom: 30px;
 }
 
 .link-portfolio {
@@ -1517,12 +1516,6 @@ svg {
   .btn-list {
     margin-bottom: 40px;
   }
-  .list-item-portfolio:nth-child(3n) {
-    margin-right: 0px;
-  }
-  .list-item-portfolio:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1548,6 +1541,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .list-item-portfolio:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .list-item-portfolio {
     border: none;
@@ -1555,6 +1554,12 @@ svg {
   }
   .list-item-portfolio:nth-child(3n) {
     margin-right: 0px;
+  }
+  .list-item-portfolio:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .list-item-portfolio:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
