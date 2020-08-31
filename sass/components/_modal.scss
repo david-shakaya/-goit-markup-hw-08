@@ -131,6 +131,7 @@
     margin-bottom: 20px;
 
     &:focus-within .modal-form-label-textarea-comments{
+      transform: translateY(-30px);
       font-size: 12px;
       line-height: 1.14;
       color: $accent-color;
@@ -145,6 +146,9 @@
     }
   }
   
+  .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments{
+    transform: translate(-0px, -30px);
+  }
   .modal-form-message {
     resize: none;
     outline: none;
@@ -301,7 +305,7 @@
       line-height: 1.16;
   }
 
-  &:focus-within .modal-form-label-textarea-comments{
+  .modal-form-message:focus-within .modal-form-label-textarea-comments{
     transform: translate(-0px, -30px);
   }
 
